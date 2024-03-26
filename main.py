@@ -1,3 +1,4 @@
+# coding=utf-8
 import json
 import pandas as pd
 import requests
@@ -38,7 +39,7 @@ def get_all_app_info():
     dict_temp = dict_temp["data"]
     dict_temp = dict_temp["vodata"]
     df_app_info = pd.DataFrame(dict_temp)
-    # 获取开发者信息&app详情页地址
+    # 获取开发者信息 & app详情页地址
     url_first = "http://app.loongapps.cn/#/detail/"
     url_list = []
     dev_list = []
